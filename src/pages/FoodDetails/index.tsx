@@ -73,7 +73,7 @@ const FoodDetails: React.FC = () => {
 
   useEffect(() => {
     async function loadFood(): Promise<void> {
-      // Load food with extras based on routeParams id
+      // Load a specific food with extras based on routeParams id
     }
 
     loadFood();

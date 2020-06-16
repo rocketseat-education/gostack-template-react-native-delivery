@@ -124,29 +124,28 @@ const Dashboard: React.FC = () => {
         </CategoryContainer>
         <FoodsContainer>
           <Title>Pratos</Title>
-          <FoodList
-            data={foods}
-            keyExtractor={item => String(item.id)}
-            renderItem={({ item }) => (
+          <FoodList>
+            {foods.map(food => (
               <Food
-                onPress={() => handleNavigate(item.id)}
+                key={food.id}
+                onPress={() => handleNavigate(food.id)}
                 activeOpacity={0.6}
-                testID={`food-${item.id}`}
+                testID={`food-${food.id}`}
               >
                 <FoodImageContainer>
                   <Image
                     style={{ width: 88, height: 88 }}
-                    source={{ uri: item.thumbnail_url }}
+                    source={{ uri: food.thumbnail_url }}
                   />
                 </FoodImageContainer>
                 <FoodContent>
-                  <FoodTitle>{item.name}</FoodTitle>
-                  <FoodDescription>{item.description}</FoodDescription>
-                  <FoodPricing>{item.formattedPrice}</FoodPricing>
+                  <FoodTitle>{food.name}</FoodTitle>
+                  <FoodDescription>{food.description}</FoodDescription>
+                  <FoodPricing>{food.formattedPrice}</FoodPricing>
                 </FoodContent>
               </Food>
-            )}
-          />
+            ))}
+          </FoodList>
         </FoodsContainer>
       </ScrollView>
     </Container>

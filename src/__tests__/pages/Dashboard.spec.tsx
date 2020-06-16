@@ -394,7 +394,7 @@ describe('Dashboard', () => {
       }
     });
 
-    apiMock.onGet('/foods?name_like=Ao+molho').reply(200, aoMolhoSearchResult);
+    apiMock.onGet('/foods?name_like=Ao molho').reply(200, aoMolhoSearchResult);
 
     apiMock.onGet('/foods?name_like=Veggie').reply(200, veggieSearchResult);
 

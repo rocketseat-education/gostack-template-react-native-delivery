@@ -49,16 +49,16 @@ describe('Orders', () => {
   it('should be able to list the food', async () => {
     const favorites = [
       {
-        id: 2,
-        name: 'Veggie',
+        id: 1,
+        name: 'Ao molho',
         description:
-          'Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.',
-        price: '21.90',
-        category: 2,
+          'Macarrão ao molho branco, fughi e cheiro verde das montanhas.',
+        price: '19.90',
+        category: 1,
         image_url:
-          'https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png',
+          'https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png',
         thumbnail_url:
-          'https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/veggie.png',
+          'https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-gorestaurant-mobile/ao_molho.png',
       },
     ];
 

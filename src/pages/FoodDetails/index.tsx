@@ -128,7 +128,7 @@ const FoodDetails: React.FC = () => {
   }, [navigation, favoriteIconName, toggleFavorite]);
 
   return (
-    <Container>
+    <Container testID={favoriteIconName}>
       <Header />
 
       <ScrollContainer>

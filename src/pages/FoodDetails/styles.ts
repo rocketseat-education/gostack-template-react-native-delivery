@@ -88,7 +88,7 @@ export const AdditionalsContainer = styled.View`
   margin-top: 16px;
 `;
 
-export const AdittionalItem = styled.View`
+export const AdditionalItem = styled.View`
   background: #f0f0f5;
   border-radius: 8px;
   display: flex;
@@ -98,7 +98,7 @@ export const AdittionalItem = styled.View`
   margin-top: 8px;
 `;
 
-export const AdittionalItemText = styled.Text`
+export const AdditionalItemText = styled.Text`
   font-family: 'Poppins-Regular';
   font-style: normal;
   font-weight: normal;
@@ -107,7 +107,7 @@ export const AdittionalItemText = styled.Text`
   color: #6c6c80;
 `;
 
-export const AdittionalQuantity = styled.View`
+export const AdditionalQuantity = styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;

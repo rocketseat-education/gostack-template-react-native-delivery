@@ -28,9 +28,9 @@ import {
   AdditionalsContainer,
   Title,
   TotalContainer,
-  AdittionalItem,
-  AdittionalItemText,
-  AdittionalQuantity,
+  AdditionalItem,
+  AdditionalItemText,
+  AdditionalQuantity,
   PriceButtonContainer,
   TotalPrice,
   QuantityContainer,
@@ -152,9 +152,9 @@ const FoodDetails: React.FC = () => {
         <AdditionalsContainer>
           <Title>Adicionais</Title>
           {extras.map(extra => (
-            <AdittionalItem key={extra.id}>
-              <AdittionalItemText>{extra.name}</AdittionalItemText>
-              <AdittionalQuantity>
+            <AdditionalItem key={extra.id}>
+              <AdditionalItemText>{extra.name}</AdditionalItemText>
+              <AdditionalQuantity>
                 <Icon
                   size={15}
                   color="#6C6C80"
@@ -162,9 +162,9 @@ const FoodDetails: React.FC = () => {
                   onPress={() => handleDecrementExtra(extra.id)}
                   testID={`decrement-extra-${extra.id}`}
                 />
-                <AdittionalItemText testID={`extra-quantity-${extra.id}`}>
+                <AdditionalItemText testID={`extra-quantity-${extra.id}`}>
                   {extra.quantity}
-                </AdittionalItemText>
+                </AdditionalItemText>
                 <Icon
                   size={15}
                   color="#6C6C80"
@@ -172,8 +172,8 @@ const FoodDetails: React.FC = () => {
                   onPress={() => handleIncrementExtra(extra.id)}
                   testID={`increment-extra-${extra.id}`}
                 />
-              </AdittionalQuantity>
-            </AdittionalItem>
+              </AdditionalQuantity>
+            </AdditionalItem>
           ))}
         </AdditionalsContainer>
         <TotalContainer>
@@ -188,9 +188,9 @@ const FoodDetails: React.FC = () => {
                 onPress={handleDecrementFood}
                 testID="decrement-food"
               />
-              <AdittionalItemText testID="food-quantity">
+              <AdditionalItemText testID="food-quantity">
                 {foodQuantity}
-              </AdittionalItemText>
+              </AdditionalItemText>
               <Icon
                 size={15}
                 color="#6C6C80"
